@@ -1,16 +1,20 @@
 body {
     background-color: #fcffe9 ;
-
-}
-
-#heading{
-    
     text-align: center;
+    margin: auto;
 }
 
-.heading h1{
+
+.heading h1, h2 {
     display: inline-block;
 }
 
+#menu {
+    position: absolute;
+    margin: auto;
+
+    border-style: solid;
+    display: inline-block;
+}
 
 
