@@ -1,11 +1,9 @@
 
-// const title = document.getElementById('title');
-// const ingredients = document.getElementById('ingredients');
-// const image = document.getElementById('image');
-// let hotCoffee = []
 
 
 fetch('https://api.sampleapis.com/coffee/hot')
+fetch( 'https://api.sampleapis.com/coffee/iced')
+
   .then ((response) => {
    if (response.ok) {
       return response.json();
@@ -24,7 +22,7 @@ function displayCoffee(data) {
    const coffee = data.coffee[0]
    const coffeeDiv = document.getElementById('coffee')
 
-
+//coffee name
 const coffeeName = coffee.strHot;
 const heading = document.createElement("h3");
 heading.innerHTML = coffeeName;

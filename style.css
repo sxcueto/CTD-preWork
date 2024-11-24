@@ -1,20 +1,126 @@
 body {
-    background-color: #fcffe9 ;
+   
     text-align: center;
-    margin: auto;
+    justify-content: space-evenly;
 }
 
-
-.heading h1, h2 {
+#heading {
     display: inline-block;
-}
-
-#menu {
-    position: absolute;
-    margin: auto;
-
+   width: 70%;
+    background-color: #efd780 ;
     border-style: solid;
-    display: inline-block;
+    border-color: #08415C;
 }
+
+h2 {
+    font-size: 30px;
+}
+
+
+
+ h1 {
+    color: black;
+    font-family: Helvetica, sans-serif; 
+    font-size: 35px;
+}
+
+.switch {
+    position: relative;
+    display: flex;
+    width: 60px;
+    height: 34px;
+    margin: auto;
+    margin-top: 12px;
+   
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+ 
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #a02d2d;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    height: 24px;
+    left: 10px;
+    bottom: 4px;
+    background-color: #fffdf7;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+
+input:checked + .slider {
+    background-color: #1C77C3;
+
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-trnasform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.slider:after {
+content: 'HOT';
+color: white;
+display: block;
+position: absolute;
+transform: translate(-50%, -50%);
+top: 50%;
+left: 50%;
+font-size: 10px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+input:checked + .slider:after {
+    content: 'ICED';
+}
+.switch-container {
+    margin-bottom: 45px;
+}
+
+h4 {
+    font-size: 12px;
+}
+#menu {
+   
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 800px;
+    width: 1700px;
+    background-color:#d7a6b3 ;
+}
+
+
+
+
 
 
